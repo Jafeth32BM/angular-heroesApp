@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AuthModule } from './auth/auth.module';
 import { Error404PageComponent } from './shared/pages/error404-page/error404-page.component';
 
+// dominio.com/
 const routes: Routes = [
   {
     path: 'auth',
@@ -19,9 +19,6 @@ const routes: Routes = [
   {
     path: '',
     redirectTo: 'heroes',
-    // Para especificar una ruta que esta vacia tambien
-    // es necesario indicar que la ruta sea exacta
-    // esta linea permite eso
     pathMatch: 'full'
   },
   {
